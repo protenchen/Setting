@@ -10,90 +10,53 @@
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/buddycloud.css" rel="stylesheet" />
   <link href="css/paperfold.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/modernizr.custom.01022.js"></script>
 </head>
 <body>
   <div id="mainContainer">
     <div id="SettingPage_Content">
       <div id="General">
-        <h1>General Settings</h1>
-        <ul>
-          <li>
-            <a>Name</a>
-          </li>
-          <li>
-            <a>Username</a>
-          </li>
-          <li>
-            <a>Email</a>
-          </li>
-          <li>
-            <a>Password</a>
-          </li>
-          <li>
-            <a>Networks</a>
-          </li>
-          <li>
-            <a>Language</a>
-          </li>
-          <li>
-            <a>Temperature</a>
-          </li>
-        </ul>
-      </div>
-      <div id="Security">
-        <h1> Security </h1>
-        <ul>
-          <li>
-            <a>Login Notifications</a>
-          </li>
-          <li>
-            <a>Login Approvals</a>
-          </li>
-          <li>
-            <a>Code Generator</a>
-          </li>
-          <li>
-            <a>App Passwords</a>
-          </li>
-          <li>
-            <a>Your Browsers and Apps</a>
-          </li>
-          <li>
-            <a>Where You're Logged In</a>
-          </li>
-          <li>
-            <a>Legacy Contact</a>
-          </li>
-        </ul>
-      </div>
+        <h1 id="go">General</h1>
+        <div class="hidden">
+            <label name="name">Name <input type="text" name="name" value="Wenshou Chen"/> </label>
+            <label name="username">Userame <input type="text" name="username" value="Protenchen"/> </label>
+            <label name="email">Email <input type="text" name="email" value="wenshou@gausian.com"/></label>
+            <label name="password">Password <input type="password" name="password" value="12345"/></label>
+            <label name="language">Language
+                <select name="language">
+                  <option value="english" selected="selected">English</option>
+                  <option value="chinese">Chinese</option>
+                  <option value="frach">Franch</option>
+                  <option value="germany">Germany</option>
+                </select>
+            </label>
+        </div>
       <div class="Personalization">
         <h1> Personalization </h1>
-        <ul>
-          <li>
-            <a>Background</a>
-          </li>
-          <li>
-            <a></a>
-          </li>
-          <li>
-            <a></a>
-          </li>
-          <li>
-            <a></a>
-          </li>
-          <li>
-            <a></a>
-          </li>
-          <li>
-            <a></a>
-          </li>
-          <li>
-            <a></a>
-          </li>
-        </ul>
+        <div class="hidden">
+          <ul>
+            <li>
+              <label name="background">Background</label>
+              <input type="file" name="background.jpg" data-max-width="500" data-max-height="300" />
+            </li>
+            <li>
+              <a></a>
+            </li>
+            <li>
+              <a></a>
+            </li>
+            <li>
+              <a></a>
+            </li>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="Mobile">
         <h1> Mobile </h1>
+        <div class="hidden">
         <ul>
           <li>
             <a>Add a Phone</a>
@@ -110,16 +73,12 @@
           <li>
             <a></a>
           </li>
-          <li>
-            <a></a>
-          </li>
-          <li>
-            <a></a>
-          </li>
         </ul>
       </div>
-      <div class="Notifications">
+      </div>
+      <div class="Notifications" class="seeMore">
         <h1> Notifications </h1>
+        <div class="hidden">
         <ul>
           <li>
             <a>Email</a>
@@ -136,18 +95,17 @@
           <li>
             <a></a>
           </li>
-          <li>
-            <a></a>
-          </li>
-          <li>
-            <a></a>
-          </li>
         </ul>
+      </div>
       </div>
     </div>
   </div>
-
+  <button id="go" class="highlighted">Open</button>
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/setting.js"></script>
+<script type="text/javascript" src="js/html5slider.js"></script>
+<script type="text/javascript" src="js/paperfold.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+
 </body>
 </html>
